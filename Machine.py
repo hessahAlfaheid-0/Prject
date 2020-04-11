@@ -154,7 +154,7 @@ print ("Y = : {0}, Y_predict: {0:.2f}".format(y_,y_predict))
 if y_ == y_predict and y_predict == 0:
   import smtplib
 
-fromaddr = 'h9h.348@gmail.com'
+fromaddr = 'projectpsau.2020@gmail.com'
 toaddrs  = 'hessahalfaheid1419@gmail.com'
 msg = "\r\n".join([
   "From: user_me@gmail.com",
@@ -165,8 +165,8 @@ msg = "\r\n".join([
   ])
 
 # Credentials (if needed)
-username = 'h9h.348@gmail.com'
-password =  'hessahaziz1234'
+username = 'projectpsau.2020@gmail.com'
+password =  '09870987H'
 # The actual mail send
 server = smtplib.SMTP('smtp.gmail.com:587')
 server.ehlo()
