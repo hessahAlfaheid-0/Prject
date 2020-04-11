@@ -151,8 +151,31 @@ y_predict = y_predict + 1
 y_predict = y_predict.item((0, 0))
 print ("Y = : {0}, Y_predict: {0:.2f}".format(y_,y_predict))
 
+if y_ == y_predict and y_predict == 0:
+  import smtplib
 
+fromaddr = 'h9h.348@gmail.com'
+toaddrs  = 'hessahalfaheid1419@gmail.com'
+msg = "\r\n".join([
+  "From: user_me@gmail.com",
+  "To: user_you@gmail.com",
+  "Subject: Just a message",
+  "",
+  "islam adel"
+  ])
 
-
-
+# Credentials (if needed)
+username = 'h9h.348@gmail.com'
+password =  'hessahaziz1234'
+# The actual mail send
+server = smtplib.SMTP('smtp.gmail.com:587')
+server.ehlo()
+server.starttls()
+server.login(username,password)
+server.sendmail(fromaddr, toaddrs, msg)
+server.quit()
+if y_ == y_predict and y_predict == 1:
+  import serial
+  ser = serial.Serial('/dev/ttyAMAO', 9600)
+   ser.write('3')
 
